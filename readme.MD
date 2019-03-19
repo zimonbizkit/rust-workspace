@@ -11,6 +11,9 @@ This repo aims to implement a workspace to follow the [Rust programming language
 - Clone the repo
 - Execute `make up`
 
+### Available commands
+ Execute `make` for a list of available commands
+
 ## First example project
 The workspace uses `rustc` and `cargo` that are inside the container to build, run, and manage projects and its dependencies. To check the available projects and its versions, execute `make list`.
 
