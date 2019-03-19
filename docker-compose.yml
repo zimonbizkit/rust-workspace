@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  rust:
+    build: ./docker/rust
+    tty: true
+    working_dir: /home/user/rust
+    volumes: 
+      - .:/home/user/rust
+    
