@@ -1,0 +1,8 @@
+[package]
+name = "diagonal-difference"
+version = "0.1.0"
+authors = ["root"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
