@@ -20,5 +20,5 @@ The workspace uses `rustc` and `cargo` that are inside the container to build, r
 You can, then, either build or run the project excecuting `make build [project_name]` and `make run [project_name]` respectively.
 
 ### TODO
-- [ ] Implement the watch command to check the project compile errors while programming
+- [x] Implement the watch command to check the project compile errors while programming
 - [ ] Finetune the list command

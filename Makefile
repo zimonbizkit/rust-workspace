@@ -66,4 +66,9 @@ run:
 .PHONY: build
 build:
 	docker-compose exec rust cargo build  --manifest-path=projects/$(filter-out $@,$(MAKECMDGOALS))/Cargo.toml
+
+## 	watch:			[make watch PROJECT_NAME]: Watches the project errors upon saving files.
+.PHONY: watch
+watch:
+	docker-compose exec rust bash -c "cd projects/$(filter-out $@,$(MAKECMDGOALS)) && cargo-watch -x check -s clear"
 	
