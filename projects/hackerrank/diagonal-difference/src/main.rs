@@ -36,6 +36,7 @@ fn main() {
     println!("Matrix 1\n\tRTL diagonal: {:?} \n\tLTR diagonal {:?}",mrtldiag,mltrdiag);
     println!("Matrix 2\n\tRTL diagonal: {:?} \n\tLTR diagonal {:?}",smrtldiag,smltrdiag);
 
+    // calculation is a bit ugly. Enhance this
     let matrixdiagonalsum = mrtldiag.values.iter().fold(0,|a, &b| a + b) + mltrdiag.values.iter().fold(0,|a, &b| a + b);
     let secondmatrixdiagonalsum = smrtldiag.values.iter().fold(0,|a, &b| a + b) + smltrdiag.values.iter().fold(0,|a, &b| a + b); 
     

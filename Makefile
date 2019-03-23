@@ -51,6 +51,12 @@ cargo:
 .PHONY: new
 new:
 	docker-compose exec --user $(USR) rust cargo new projects/$(filter-out $@,$(MAKECMDGOALS)) --bin
+	mkdir projects/$(filter-out $@,$(MAKECMDGOALS))/target/
+	echo << HDOC /debug/
+	/release/
+	.rustc_info.json
+	HDOC >> projects/$(filter-out $@,$(MAKECMDGOALS))/target/.gitignore
+
 
 ##	fix-perms:		Fix permisisons of project
 .PHONY: fix-perms
